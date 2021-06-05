@@ -1,0 +1,5 @@
+<apex:page controller="ThirdController" extensions="ThirdOne,ThirdTwo,ThirdThree,ThirdFour,ThirdFive">
+    <apex:form >
+    	<apex:commandButton value="Save" action="{! saveRecord}"/>
+    </apex:form>
+</apex:page>

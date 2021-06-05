@@ -1,0 +1,5 @@
+<apex:page controller="FirstController">
+    <apex:form >
+        <apex:commandButton value="Save" action="{! saveRecord}" />
+    </apex:form>
+</apex:page>

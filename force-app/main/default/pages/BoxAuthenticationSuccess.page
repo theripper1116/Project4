@@ -1,0 +1,7 @@
+<apex:page controller="BoxAuthorisationController" action="{! tradeAuthCode }">
+    HEY!! You got the auth code successfully!
+    
+	 <apex:dataTable value="{! dataList }" var="data">
+        <apex:column value="{! data.name }" title="Title" /> 
+    </apex:dataTable>
+</apex:page>

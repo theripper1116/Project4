@@ -1,0 +1,5 @@
+<apex:page standardController="Device__c">
+    <apex:form >
+    	<apex:commandButton value="Save" action="{! save}"/>
+    </apex:form>
+</apex:page>

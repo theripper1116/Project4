@@ -1,0 +1,7 @@
+<apex:page controller="BatchController">
+
+    <apex:form >
+    	<apex:commandButton value="Search" action="{! invoke }" />
+    </apex:form>
+    
+</apex:page>

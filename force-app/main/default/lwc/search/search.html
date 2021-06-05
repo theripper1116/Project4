@@ -1,0 +1,45 @@
+<!-- <template>
+    <lightning-input label="search here" name="search" onchange={handleChange}></lightning-input>
+    <lightning-input label="Enter Account Name" name="account_name" onchange={handleChange}></lightning-input>
+    <lightning-input label="Enter Stage" name="stage" onchange={handleChange}></lightning-input>
+    <lightning-input label="Enter Type" name="type" onchange={handleChange}></lightning-input>
+    <lightning-input label="Enter Amount" name="amount" onchange={handleChange}></lightning-input> 
+    <lightning-button label="Search!!!!!!!!!" onclick={searchData}></lightning-button>
+</template> 
+
+ -->
+
+
+ <template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search"
+                value={searchKey}></lightning-input>
+            <lightning-datatable 
+            key-field="Id" 
+            data={allContacts} 
+            columns={columns} 
+            sorted-by={sortedBy}
+                sorted-direction={sortedDirection} 
+                onsort={sortColumns}
+                hide-checkbox-column="true"  
+                show-row-number-column="true"
+                onrowaction={callRowAction}>
+            </lightning-datatable>
+            </br>
+            <lightning-layout horizontal-align="space">
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={previousHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    Page {page} of {totalPage}
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right"
+                        onclick={nextHandler}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+    </template>

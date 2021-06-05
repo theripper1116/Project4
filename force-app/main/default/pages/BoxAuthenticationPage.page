@@ -1,0 +1,6 @@
+<apex:page controller="BoxAuthorisationController">
+    
+    <apex:form >
+    	<apex:commandButton value="Fetch" action="{! getAuthenticated }" />
+    </apex:form>
+</apex:page>

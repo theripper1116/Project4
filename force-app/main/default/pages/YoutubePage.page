@@ -1,0 +1,39 @@
+<apex:page controller="YoutubeController">
+    
+    
+    <style>
+        .tmbImage {
+            width: 50% !important;
+            margin-bottom : 10px;
+            
+        }
+        
+        .customText{
+        color: gray;
+        }
+    </style>
+    
+    <apex:form >
+        <apex:inputText value="{! searchText }" />
+        <apex:commandButton value="Search" action="{! search }" />
+    </apex:form>    
+    
+    <apex:dataTable value="{! dataList }" var="data">
+        <apex:column title="Title" >
+        	<apex:outputLink value="https://www.youtube.com/watch?v={! data.videoId}">{! data.title}</apex:outputLink>
+        </apex:column>
+        <apex:column title="Description">
+            <div class="customText">
+                 {! data.description }
+            </div>
+        </apex:column>
+        <apex:column value="{! data.publishedAt }" title="Published At" />
+        <apex:column title="Thumbnail" >
+
+            <apex:image url="{! data.url }" alt="thumbanil" styleClass="tmbImage"  />                
+
+
+        </apex:column>
+        
+    </apex:dataTable>
+</apex:page>
