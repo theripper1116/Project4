@@ -1,0 +1,93 @@
+PD1: -
+
+What are Governor Limits?
+What is a trigger?
+What is difference b/w before & after trigger?
+What is difference b/w Trigger & process builder?
+What is difference b/w trigger.newmap and trigger.oldmap?
+What is difference b/w trigger.new and trigger.old?
+Order of execution in Salesforce? Imp
+Difference b/w SOQL & SOSL?
+Difference b/w insert & Database.insert?
+Apex interface?
+Where can I use Apex?
+Difference b/w static & non-static?
+Different exception types? Imp <DML exception ,SOQL 101 Exception, NullPointer Exception,sObject Exception>
+@invocablemethod & @invocablevariable? Imp
+Difference among List v Set v Map? //Can list contain duplicate values(Yes)
+What is Batch Apex?
+Apex scheduler?
+Apex Transaction?
+Apex sharing?
+What are static resources?
+VF component?
+Difference b/w Std.controller & controller? Imp
+What is @Future?
+Aura: -
+
+What is Aura Framework & explain in detail?
+What is <aura:method>
+What is <aura:attribute>
+What we have in ctrl+1 till ctrl+8
+What is a component?
+How to communicate among components? Imp
+Lightning App Builder? Lightning Process Builder?
+What is an event? And how it works? <Two type of events are there component event and application event>
+Explain Helpers?
+Explain component, controller, helper, style?
+What is a namespace? <1-15 alphanumeric combination that uniquely identifies a package>
+LWC & Integration services:-
+
+What is LWC?
+Difference b/w Aura & LWC?
+Life cycle hooks of LWC?<Constructor, connectedCallback, renderedCallback, errorCallback, disconnectedCallback>
+CLI to login, create project, deploy project? <authorize an org:- 
+					      sfdx force:auth:web:login --setalias s --instanceurl https://login.salesforce.com --setdefaultusername>
+What is binding? <used to connect different things in terms of data set, component or action>
+How communication happens b/w component to component?
+Data transfer b/w Parent component to child component(Properties) and vise versa(events)?
+@track, @api, @wire?<@track:- Fields are reactive. If a field’s value changes, and the field is used in a template or in a getter of a property 
+		    that’s used in a template, the component rerenders and displays the new value.>
+How @wire is used?
+What are iterators?
+How to print data using iterators?
+Difference b/w ReST(works with jason and xml) & SOAP(works with xml only and requires high bandwidth)?
+What is HPPT GET, POST, PUT, DELETE?
+what to do lwc pagination
+what is data sources
+types of data sources
+
+
+Answer all the above questions with scenarios wherever it is applied.
+
+
+Admin & App Builder: -
+
+What is CRM?
+What are different salesforce licenses?
+What is Marketing cloud, Sales cloud, Service cloud?
+What is Salesforce org? different Sandboxes?
+Difference b/w Classic & Lightning?
+What are Standard & Custom Objects?
+What is Master Detail relationship? Rollup summary?
+What is Look up relationship?
+Many to many relationship | Junction object?
+What is a profile?
+What is permission set?
+What is OWD?
+What are Roles?
+What are Sharing Rules? Manual Sharing?
+Record Level security & Object level security?
+Approval Process? Steps in approval process?
+What is workflow?
+What is process builder?
+Difference b/w workflow & process builder?
+ What is Flow? Types?
+ID, Record ID?
+What is Data loader? what are its options explain in detail?
+Difference b/w update & upsert?
+Types of reports?
+Audit fields?
+Queues?
+What are Tabs & Apps?
+Answer all the above questions with scenarios where ever it is applied.
