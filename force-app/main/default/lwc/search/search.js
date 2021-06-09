@@ -53,13 +53,11 @@ const columns = [{
 label: 'Name',
 fieldName: 'ConName',
 type: 'url',
-sortable: true,
 typeAttributes: {label: { fieldName: 'Name' }, target: '_blank'}
 },
 {
 label: 'Account Name',
 fieldName: 'ConAcc',
-sortable: true,
 type: 'url',
 typeAttributes: {label: { fieldName: 'Account.Name' }, target: '_blank'}
 },
@@ -100,7 +98,7 @@ export default class Oppor_page extends LightningElement {
 @track allContacts = [];     
 @track startingRecord = 1;
 @track endingRecord = 0; 
-@track pageSize = 5; 
+@track pageSize = 10; 
 @track succ_String = 'Success';
 @track rej_String = 'Rejected';
 @track totalRecountCount = 0;
@@ -189,14 +187,16 @@ handleKeyChange( event ) {
     return refreshApex(this.result);
 }
  
+ 
 callRowAction( event ) {  
     const recId =  event.detail.row.Id;  
     console.log(recId);
     const actionName = event.detail.action.name;  
     console.log(actionName);  
     if(actionName == "Send"){
-        startRequest({numString: Math.floor((Math.random() * 100) + 1).toString()})
-        .then(result =>{
+        console.log((Math.ceil(Math.random() * 100)) + 1);
+        startRequest({numString: (Math.ceil(Math.random() * 100)) + 1})
+        .then((result) =>{
             console.log('abc');
             console.log(result);
             const myObj = JSON.parse(result);
